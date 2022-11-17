@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #3A0CA3;
+}
+
+.white{
+    color: #fff;
+  }
+  header{
+    padding: 20px;
+    background-color: #480CA8;
+    font-size: 24px;
+    padding-left: 80px;
+  }
+  .main{
+    display: block;
+    justify-content: center;
+    max-width: 30%;
+    margin-left: 35%;
+    text-align: center;
+  }
+  
+  input, button{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    
+  }
+  button{
+    background-color: #4CC9F0;
+    color: #E2E5EB;
+    font-size: 20px;
+    border: none;
+  }
+  input{
+    background-color:#283245;
+    color: #E2E5EB;
+    border: 1px solid #3a3c41;
+  }
+  ::placeholder{
+    color: #E2E5EB;
+  }
+  #gender{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #283245;
+    background-color:#283245;
+    color: #E2E5EB;
+  }
+  
+  .para1{
+    text-align: left;
+    padding-left: 30px;
+  }
+  a{
+    text-decoration: none;
+    color: #81b7ec;
+  }
+  .create{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .icon{
+    font-size: 36px;
+    padding-right: 10px;
+  }
+  .login{
+    margin-top: 5%;
+  }
+  .lgn{
+    padding: 20px;
+  }
+
+
+
+  /* desiging the Footer Section */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.upperSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 7%;
+    color: #fff;
+    align-items: center;
+}
+
+td a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 30px;
+}
+
+.lowerSide{
+    background-color: #4110B1;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+#connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#social-icon{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}

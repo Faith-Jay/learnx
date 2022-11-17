@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&family=Sofia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #3A0CA3;
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sofia', cursive */
+
+
+/* Desiging the Nav bar */
+header{
+    background-color: #480CA8;
+    opacity: 1;
+    
+}
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 40px;
+}
+li a:active{
+    color: #4CC9F0;
+}
+ul{
+    list-style: none;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+nav{
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 7%;
+    padding-bottom: 5px;
+}
+#signup-btn{
+    background-color: #480CA8;
+    border: 1px solid #F72585;
+    margin-left: 90px;
+    width: 140px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+#login-btn{
+    width: 140px;
+    height: 48px;
+    background-color: #F72585;
+    margin-left: 24px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+.cnt{
+    text-align: center;
+}
+
+/* Desiging the Hero Section */
+#heroSection{
+    background-color: #3A0CA3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 7% 10px;
+}
+
+#leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    margin-top: -120px;
+    min-width: 48vw;
+}
+h2{
+    font-size: 40px;
+}
+#free{
+    font-family: 'Sofia', cursive;
+    font-size: 40px;  
+    color: #E4E903; 
+}
+#copy{
+    font-size: 16px;
+    color: #fff;
+    line-height: 27px;
+    width: 70%;
+}
+#heroImage{
+    max-height: 100vh;
+    min-width: 33vw;
+}
+#search-field{
+    background-color: #3A0CA3;
+    border: 1px solid #F72585;
+    width: 457px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+input[type=text], select{
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 20px;
+} 
+#search-btn{
+    width: 160px;
+    height: 60px;
+    border: none;
+    background-color: #F72585;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 24px;
+}
+#tnt{
+    display: flex;
+    align-items: center;
+}
+ 
+/* desiging other section of the landing page */
+
+#explore{
+    background-color: hsl(194, 85%, 90%);
+    text-align: center;
+    border-radius: 100px 100px 0 0;
+}
+.blue{
+    color: #3A0CA3;  
+}
+#explore-link{
+    color: #F72585;
+    font-size: 24px;
+}
+.pad{
+    padding: 40px 0 80px;
+}
+.pad1{
+    padding: 60px 0 5px;
+}
+.pad2{
+    padding-bottom: 40px;
+}
+.pad3{
+    padding-left: 7%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.new-sctn{
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 0 0 100px 100px;
+    opacity: 1;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 7%;
+}
+.btn3{
+    background-color: #4CC9F0;
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    margin-left: 7%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+button a{
+    text-decoration: none;
+}
+
+
+/* desiging the Footer Section */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.upperSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 7%;
+    color: #fff;
+    align-items: center;
+}
+
+td a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 30px;
+}
+
+.lowerSide{
+    background-color: #4110B1;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+#connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#social-icon{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+/* sticky nav */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+
+/* Contact page style */
+.contact_heading{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 100px;
+  }
+  .cnt-para{
+    text-align: center;
+    width: 90%;
+  }
+  .contact_page{
+    height: 700px;
+    /* background: #0D0D2B; */
+  }
+  .contact_form{
+    width: 30%;
+    display: block;
+    margin-left: 35%;
+  }
+  .white{
+    color: #fff;
+  }
+  input, button.btnn{
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%; 
+  }
+  button{
+    background-color: #004282;
+    color: #E2E5EB;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+  }
+  input{
+    background-color:#283245;
+    color: #E2E5EB;
+    border: 1px solid #3a3c41;
+    padding: 20px;
+  }
+  ::placeholder{
+    color: #E2E5EB;
+    position: absolute;
+    top:20px ;
+    left: 20px;
+}
+
+.msg_area{
+    height: 200px;
+}
+
+
+
+/* about section */
+.abt-txt{
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 5%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    display: flex;
+}
+#abt-hdng{
+    font-size: 32px;
+    line-height: 200%;
+}
+
+/* Courses page */
+
+.course-grid{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   padding: 40px;
+   row-gap: 40px;
+}
+
+a img{
+    width: 90%;
+}

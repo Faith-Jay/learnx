@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact LearnX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <nav class="flex" >
+          <img src="images/Logo.png" alt="Logo" />
+          <ul class="flex">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li>
+              <button id="signup-btn"><a href="/signup.html" class="cnt">SignUp</a></button>
+            </li>
+            <li>
+              <button id="login-btn"><a href="/login.html" class="cnt">Login</a></button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main class="contact_page">
+        <h1 class="contact_heading white">Contact us</h1>
+        <div class="contact_form">
+            <p class="white cnt-para">Do you have any issues with our site? drop us a message below, our team will try to respond within 24 hours</p>
+
+          <form action="">
+            <input
+              type="text"
+              name="Name"
+              placeholder="Name"
+              required
+            />
+  
+            <input type="email" name="email" placeholder="Email" required />
+  
+            <input
+              class="msg_area"
+              type="text"
+              name="message"
+              placeholder="Type your message here"
+              required
+            />
+            <button type="submit" class="btnn">Submit</button>
+          </form>
+        </div>
+      </main>
+      <!-- Footer Section -->
+    <footer>
+        <!-- Upper part of the footer -->
+    <div class="upperSide">
+  
+      <div id="world">
+        <img src="/images/world.png" alt="worldicon">
+        <p>English (United States)</p>
+      </div>
+  
+      <div id="legal">
+        <table>
+          <tr>
+           <td><a href="/contact.html">Contact</a></td>
+           <td><a href="#">Terms of Use</a></td>
+          </tr>
+          <tr>
+           <td><a href="#">FAQs</a></td>
+           <td><a href="#">Privacys and cookies</a></td>
+          </tr>
+          <tr>
+           <td><a href="/about.html">About Us</a></td>
+          </tr>
+        </table>
+      </div>
+  
+      <div id="connect">
+        <h3>Connect with Us</h3>
+        <div id="social-icon">
+         <a href="https://www.twitter.com" target="_blank"><img src="images/twitter icon.png" alt="twitter"></a> 
+          <a href="https://www.linkedin.com" target="_blank"><img src="/images/linkedin.png" alt="linkedin"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="/images/instagram.png" alt="instagram"></a>
+        </div>
+      </div>
+  
+    </div>
+      <!-- lower part of the footer -->
+      <div class="lowerSide">
+       <p>LearnX Corporation © 2022</p>
+      </div>
+      </footer>
+
+</body>
+
+<script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</html>

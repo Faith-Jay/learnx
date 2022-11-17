@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Task</title>
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://kit.fontawesome.com/fd5d6eeda4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar white">
+        <h4><img src="/images/Logo.png" alt="Logo"></h4>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main">
+        <h1 class="white create">Create a LearnX account</h1>
+        <form action="courses.html">
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First name"
+            required
+          />
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Last name"
+            required
+          />
+          <input
+            type="tel"
+            name="phone_number"
+            placeholder="Phone number"
+            required
+          />
+          <input type="email" name="email" placeholder="Email" required />
+          <select name="Gender" id="gender" required>
+            <option value="Gender">Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <input type="date" name="dob" placeholder="Date of birth" required />
+          
+          <input type="password" name="psw" placeholder="Create a new Password" required />
+          <button type="submit">
+            <div class="create">
+              <i class="fa-regular fa-plus icon"></i> Create a new account
+            </div>
+          </button>
+        </form>
+        <div class="para1 white">
+          <p>Have an account? <a href="Login.html">Login</a></p>
+          <p>Have trouble signing in? <a href="#">Get help</a></p>
+          <p>
+            By continuing you are agreeing with our
+            <a href="#">Terms and Conditions</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <!-- Upper part of the footer -->
+    <div class="upperSide">
+  
+      <div id="world">
+        <img src="/images/world.png" alt="worldicon">
+        <p>English (United States)</p>
+      </div>
+  
+      <div id="legal">
+        <table>
+          <tr>
+           <td><a href="/contact.html">Contact</a></td>
+           <td><a href="#">Terms of Use</a></td>
+          </tr>
+          <tr>
+           <td><a href="#">FAQs</a></td>
+           <td><a href="#">Privacys and cookies</a></td>
+          </tr>
+          <tr>
+           <td><a href="/about.html">About Us</a></td>
+          </tr>
+        </table>
+      </div>
+  
+      <div id="connect">
+        <h3>Connect with Us</h3>
+        <div id="social-icon">
+         <a href="https://www.twitter.com" target="_blank"><img src="images/twitter icon.png" alt="twitter"></a> 
+          <a href="https://www.linkedin.com" target="_blank"><img src="/images/linkedin.png" alt="linkedin"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="/images/instagram.png" alt="instagram"></a>
+        </div>
+      </div>
+  
+    </div>
+      <!-- lower part of the footer -->
+      <div class="lowerSide">
+       <p>LearnX Corporation © 2022</p>
+      </div>
+      </footer>
+  </body>
+</html>

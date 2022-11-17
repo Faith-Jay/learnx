@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Learnx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <nav class="flex" >
+          <img src="images/Logo.png" alt="Logo" />
+          <ul class="flex">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li>
+              <button id="signup-btn"><a href="/signup.html" class="cnt">SignUp</a></button>
+            </li>
+            <li>
+              <button id="login-btn"><a href="/login.html" class="cnt">Login</a></button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main style="padding-left: 5%; background-color:#fff; padding-top:7%;">
+        <!-- search area -->
+        <div id="tnt">
+          <form action="/courses.html">
+          <input
+            type="text"
+            name="search"
+            id="search-field"
+            placeholder="&#128269 Search for a course" required/>
+          <button type="submit" id="search-btn">Search</button>
+        </form>
+        </div>
+
+       <!-- courses -->
+       <div class="course-grid">
+        <a href="https://www.udemy.com/course/pythonforbeginnersintro/" target="_blank"><img src="/images/course1.png" alt="course1"></a>
+        <a href="https://youtu.be/CaqJ65CIoMw" target="_blank"><img src="/images/course2.png" alt="course2"></a>
+        <a href="https://www.udemy.com/course/sefactory-foundations-of-computer-science/" target="_blank"><img src="/images/course3.png" alt="course3"></a>
+        <a href="#"><img src="/images/course4.png" alt="course4"></a>
+        <a href="#"><img src="/images/course5.png" alt="course5"></a>
+        <a href="#"><img src="/images/course6.png" alt="course6"></a>
+        <a href="#"><img src="/images/course7.png" alt="course7"></a>
+        <a href="#"><img src="/images/course8.png" alt="course8"></a>
+        <a href="#"><img src="/images/course9.png" alt="course9"></a>
+        <a href="#"><img src="/images/course10.png" alt="course10"></a>
+        <a href="#"><img src="/images/course11.png" alt="course11"></a>
+        <a href="#"><img src="/images/course12.png" alt="course12"></a>
+        <a href="#"><img src="/images/course13.png" alt="course13"></a>
+        <a href="#"><img src="/images/course14.png" alt="course14"></a>
+        <a href="#"><img src="/images/course15.png" alt="course15"></a>
+       </div>
+
+
+      </main>
+      
+ <!-- Footer Section -->
+ <footer>
+    <!-- Upper part of the footer -->
+<div class="upperSide">
+
+  <div id="world">
+    <img src="/images/world.png" alt="worldicon">
+    <p>English (United States)</p>
+  </div>
+
+  <div id="legal">
+    <table>
+      <tr>
+       <td><a href="/contact.html">Contact</a></td>
+       <td><a href="#">Terms of Use</a></td>
+      </tr>
+      <tr>
+       <td><a href="#">FAQs</a></td>
+       <td><a href="#">Privacys and cookies</a></td>
+      </tr>
+      <tr>
+       <td><a href="/about.html">About Us</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="connect">
+    <h3>Connect with Us</h3>
+    <div id="social-icon">
+     <a href="https://www.twitter.com" target="_blank"><img src="images/twitter icon.png" alt="twitter"></a> 
+      <a href="https://www.linkedin.com" target="_blank"><img src="/images/linkedin.png" alt="linkedin"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="/images/instagram.png" alt="instagram"></a>
+    </div>
+  </div>
+
+</div>
+  <!-- lower part of the footer -->
+  <div class="lowerSide">
+   <p>LearnX Corporation © 2022</p>
+  </div>
+  </footer>
+</body>
+
+<script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</html>
