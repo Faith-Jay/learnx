@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnX</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="flex" >
+        <img src="images/Logo.png" alt="Logo" />
+        <ul class="flex">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/courses.html">Courses</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <button id="signup-btn"><a href="/signup.html" class="cnt">SignUp</a></button>
+          </li>
+          <li>
+            <button id="login-btn"><a href="/login.html" class="cnt">Login</a></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <div id="heroSection">
+        <!-- Left Side Text Area -->
+        <div id="leftSide">
+          <h2 class="white">Become an Expert Techie for <strong id="free">Free</strong></h2>
+          <p id="copy">
+            We offer thousaunds of free tech courses to take you from being
+            absolute novice to earning from your first job.
+          </p>
+          <div id="tnt">
+            <form action="/courses.html">
+            <input
+              type="text"
+              name="search"
+              id="search-field"
+              placeholder="&#128269 Search for a course" required/>
+            <button type="submit" id="search-btn">Search</button>
+          </form>
+          </div>
+        </div>
+        <!-- Right side Image -->
+        <div id="rightSide">
+          <img src="/images/hero section image.png" alt="hero section image" id="heroImage">
+        </div>
+      </div>
+      <!-- Other Sections -->
+      <div id="other">
+        <!-- Explore section -->
+       <div id="explore">
+        <h1 class="pad1 blue">Join over 100,000 other students using LearnX to Upskill </h1>
+        <p class="pad2 blue">Learn from the best of Tutors. Explore hundreds of content for Free</p>
+        <img src="/images/video image.png" alt="video image">
+        <p class="pad"><a href="#" id="explore-link">Explore all courses</a></p>
+       </div>
+
+       <!-- what's new section -->
+        <div class="new-sctn">
+        <h1 class="blue pad3">What’s New on LearnX?</h1>
+        <div class="cards">
+         <a href="#"><img src="/images/card1.png" alt="python course" width="90%"></a>
+         <a href="#"><img src="/images/card2.png" alt="SQL course" width="90%"></a>
+         <a href="#"><img src="/images/card3.png" alt="java course" width="90%"></a>
+        </div>
+        <button class="blue btn3"><a href="#">Explore more courses</a></button>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <!-- Upper part of the footer -->
+  <div class="upperSide">
+
+    <div id="world">
+      <img src="/images/world.png" alt="worldicon">
+      <p>English (United States)</p>
+    </div>
+
+    <div id="legal">
+      <table>
+        <tr>
+         <td><a href="/contact.html">Contact</a></td>
+         <td><a href="#">Terms of Use</a></td>
+        </tr>
+        <tr>
+         <td><a href="#">FAQs</a></td>
+         <td><a href="#">Privacys and cookies</a></td>
+        </tr>
+        <tr>
+         <td><a href="/about.html">About Us</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="connect">
+      <h3>Connect with Us</h3>
+      <div id="social-icon">
+       <a href="https://www.twitter.com" target="_blank"><img src="images/twitter icon.png" alt="twitter"></a> 
+        <a href="https://www.linkedin.com" target="_blank"><img src="/images/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="/images/instagram.png" alt="instagram"></a>
+      </div>
+    </div>
+
+  </div>
+    <!-- lower part of the footer -->
+    <div class="lowerSide">
+     <p>LearnX Corporation © 2022</p>
+    </div>
+    </footer>
+  </body>
+
+
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+</html>
